@@ -54,23 +54,18 @@ class _RequestState extends State<Request> {
               Column(
                 children: <Widget>[
                   Card(
+                    color: Colors.white70,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(35)
+                        borderRadius: BorderRadius.circular(20)
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.only(left:5,top: 20,right:5,bottom:20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Row(
                             children: <Widget>[
-                              Container(
-                                child: CircleAvatar(
-                                  backgroundImage: AssetImage('assets/images/profile.png'),
-                                  radius: 40,
-                                ),
-                              ),
-                              SizedBox(width: 10,),
+                              SizedBox(width: 20,),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
@@ -92,6 +87,19 @@ class _RequestState extends State<Request> {
                                   SizedBox(height: 5,)
                                 ],
                               ),
+                              SizedBox(width: 10,),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: <Widget>[
+                                  SizedBox(height: 35,),
+                                  Text(
+                                    'Car Number',
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                    ),
+                                  ),
+                                ],
+                              )
                             ],
                           ),
                           MaterialButton(
@@ -99,13 +107,9 @@ class _RequestState extends State<Request> {
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            color: Colors.lightBlueAccent,
-                            onPressed: () {
-                              Navigator.of(context).push(
-                                  MaterialPageRoute(builder: (context) => RequestDetails())
-                              );
-                            },
-                            child: Text('Request\nDetails', style: TextStyle(fontSize: 15),),
+                            color: Colors.lightGreenAccent,
+                            onPressed: () {},
+                            child: Text('Allow Access', style: TextStyle(fontSize: 15),),
                           )
                         ],
                       ),

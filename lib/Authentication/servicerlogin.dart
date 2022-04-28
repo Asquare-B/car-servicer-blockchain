@@ -4,14 +4,14 @@ import 'package:blockchain/Forms/Signupform.dart';
 import 'package:blockchain/HomePages/UserHome.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class ServicerLoginPage extends StatefulWidget {
+  const ServicerLoginPage({Key? key}) : super(key: key);
 
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _ServicerLoginPageState createState() => _ServicerLoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _ServicerLoginPageState extends State<ServicerLoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
