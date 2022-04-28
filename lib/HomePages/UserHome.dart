@@ -158,31 +158,6 @@ class _UserHomePageState extends State<UserHomePage> {
                             ),
                             InkWell(
                               onTap: () {
-                              },
-                              splashColor: Colors.black54,
-                              borderRadius: BorderRadius.circular(15),
-                              child: Card(
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20)
-                                ),
-                                elevation: 10,
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: <Widget>[
-                                    Container(
-                                      child: Container(
-                                          child: Image.asset('assets/images/request.png',height: 100)
-                                      ),
-                                    ),
-                                    SizedBox(height: 6,),
-                                    Text("Menu", style: cardStyle,),
-                                  ],
-                                ),
-                              ),
-                            ),
-                            InkWell(
-                              onTap: () {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(builder: (context)=>Profile())
                                 );
